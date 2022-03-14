@@ -1,0 +1,25 @@
+.newsletter__container{
+
+.newsletter__form{
+	padding: 1rem;
+	background: $container-color;
+	border-radius: .75rem;
+	display: flex;
+    justify-content: space-between;
+	.newsletter__input{
+		width: 70%;
+		background: none;
+		color: white;
+	}
+}
+}
+::placeholder { 
+	color: $first-color;
+      }
+      @media screen and (min-width: 576px){
+.newsletter__container {
+    display: grid;
+    grid-template-columns: .7fr;
+    justify-content: center;
+}
+      }

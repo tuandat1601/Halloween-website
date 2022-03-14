@@ -1,0 +1,3 @@
+@function fontsizes($color-style){
+	@return map-get($fonts , $color-style )
+}

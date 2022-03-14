@@ -1,0 +1,30 @@
+.discount__container{
+	background: $container-color;
+	border-radius: 1rem;
+	padding: 2.5rem 0 1.5rem;
+	row-gap:2rem;
+	.discount__data{
+		text-align: center;
+		.discount__title{
+			margin-bottom: $mb-2;
+		}
+	}
+	.discount__img{
+		width: 200px;
+		margin: 0 auto;
+	}
+}
+@media screen and(min-width:767px) {
+	.discount__container{
+		grid-template-columns: repeat(2, max-content);
+		align-items: center;
+		column-gap: 3rem;
+		padding: 3rem;
+		justify-content: center;
+		border-radius: 3rem;
+		.discount__img{
+			width: 350px;
+			order: -1;
+		}
+	}
+}

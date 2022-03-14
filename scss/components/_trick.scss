@@ -1,0 +1,63 @@
+
+.trick__container{
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	padding-top: 1rem;
+	.trick__content{
+		position: relative;
+		border-radius: 1rem;
+		background: $container-color;
+		padding: 1.5rem 0 1rem 0;
+		text-align: center;
+		overflow: hidden;
+		.trick__img{
+			width: 90px;
+		}
+		.trick__subtitle{
+			display: block;
+			font-size: $smaller-font-size;
+			margin-bottom:$mb-0-5;
+		}
+		.trick__price{
+			display: block;
+		}
+		.trick__price, .trick__title{
+			color: $title-color;
+			font-size:$h3-font-size;
+			font-weight: $font-medium;
+
+		}
+		.trick__button{
+			position: absolute;
+			bottom: 0;
+			padding: .5rem;
+			border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
+			right:-3rem;
+		}
+		.trick__button, .trick__img{
+			transition:  0.25s;
+		}
+	}
+}
+.trick__content:hover .trick__img {
+	transform: translateY(-0.5rem);
+}
+.trick__content:hover .trick__button{
+	right:0;
+}
+@media screen and (min-width:767px) {
+	.trick__container{
+		grid-template-columns: repeat(3, 200px);
+		gap: 2rem;
+		justify-content: center;
+
+	}
+}
+@media screen and (min-width:992px) {
+	.trick__container{		
+		gap: 3.5rem;
+		.trick__content{
+			border-radius: 1.5rem;
+		}
+	}
+}

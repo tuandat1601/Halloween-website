@@ -1,0 +1,21 @@
+.category__container{
+	grid-template-columns: repeat(2,1fr);
+	gap:1rem 2rem
+}
+.category__img{
+	width: 120px;
+	transition: .2s;
+	margin-bottom: $mb-0-75;
+}
+.category__data{
+	text-align: center;
+}
+.category__data:hover .category__img{
+	transform: translateY(-10px);
+}
+@media screen and(min-width:767px) {
+	.category__container{
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+	}
+}
